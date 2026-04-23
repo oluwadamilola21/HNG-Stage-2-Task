@@ -1,18 +1,42 @@
-# React + Vite
+# Invoice App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive invoice management app built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Setup Instructions
 
-## React Compiler
+git clone https://github.com/oluwadamilola21/HNG-Stage-2-Task.git
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+cd YOUR_REPO
+npm install
+npm run dev
+Build
+npm run build
+npm run preview
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## Architecture Explanation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Built using a component-based structure with React
+Main pages: InvoicesPage, InvoicesForm
+Reusable components: InvoiceList, InvoiceCard, Header, PaymentTermsSelect
+State handled using React hooks and a custom useInvoices hook
+Form uses controlled inputs and derived state for totals
+
+
+---
+
+## Accessibility Notes
+Semantic HTML used where possible
+Focus states maintained for inputs and buttons
+ARIA attributes added for custom dropdown
+
+---
+## Live Demo
+https://hng-stage-2-task-swart.vercel.app/
+
+## Tech Stack
+
+React • TypeScript • Tailwind CSS • Vite
